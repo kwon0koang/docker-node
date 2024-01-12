@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  node:
+    build:
+      context: node/
+    container_name: node
+    volumes:
+      - ./node/index.js:/usr/src/app/index.js
+    ports:
+      - "3000:3000"
