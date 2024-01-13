@@ -6,6 +6,7 @@ services:
       context: node/
     container_name: node
     volumes:
-      - ./node/index.js:/usr/src/app/index.js
+      # - ./node/index.js:/usr/src/app/index.js
+      - ./node:/usr/src/app
     ports:
       - "3000:3000"
